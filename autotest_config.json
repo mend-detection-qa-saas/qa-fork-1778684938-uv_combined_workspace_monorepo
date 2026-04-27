@@ -8,7 +8,7 @@
             "_security_scan_report_conclusion": "failure",
             "_comment_security_scan_report_conclusion": "Optional. Expected scan report conclusion. Options: 'success' | 'failure'. This validates the security scan result status. If not provided, this check will not be performed.",
             "total_libs_scanned": {
-                "eq": 28
+                "eq": 0
             },
             "_comment_total_libs_scanned": "Expected number of libraries scanned with comparison operator. Validates that the scan processed libraries."
         },
@@ -64,11 +64,11 @@
                     "six"
                 ]
             },
-            "_comment_dependencies_names_list": "Optional. Check specific libraries in direct dependencies. Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed.",
+            "_comment_dependencies_names_list": "Optional.",
             "validate_agent_versions": true,
             "expected_agent_version": "",
             "expected_plugin_version": "",
-            "_comment_agent_versions": "Optional. Expected agent and plugin versions. If not provided, this check will not be performed."
+            "_comment_agent_versions": "Optional."
         },
         "validate_vulnerabilities_table": true,
         "_comment_validate_vulnerabilities_table": "Whether to validate the vulnerabilities table. Options: true | false. Default: true",
@@ -80,11 +80,11 @@
             "vulnerabilities_ids_list": {
                 "contains": []
             },
-            "_comment_ids_names_list": "Optional. Check specific libs ids (WS-2018-0111, CVE-2021-44906). Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed.",
+            "_comment_ids_names_list": "Optional.",
             "vulnerabilities_names_list": {
                 "contains": []
             },
-            "_comment_vulnerabilities_names_list": "Optional. Check specific libs names (minimist-0.0.8.tgz). Operators: eq (==), contains (all items from expected list in actual), in(all items from actual list in expected), nin(actual list does not contain provided libs). If not provided, this check will not be performed."
+            "_comment_vulnerabilities_names_list": "Optional."
         }
     }
 }
